@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200, initial-scale=1" />
+  <title>Nightdesk cover</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Sometype+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="../css/system.css" />
+  <style>
+    html, body { width: 1200px; height: 800px; overflow: hidden; }
+    .cv {
+      width: 1200px;
+      height: 800px;
+      padding: 40px;
+      background: var(--nd-canvas);
+    }
+    .cv-shell {
+      position: relative;
+      height: 100%;
+      padding: 56px 72px 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--nd-shell);
+      border-radius: var(--nd-radius-xl);
+      box-shadow: var(--nd-shadow-shell);
+      overflow: hidden;
+    }
+    .cv-title {
+      font: 500 204px/0.86 var(--nd-font-ui);
+      letter-spacing: -0.055em;
+      margin-left: -10px;
+    }
+    .cv-title span { color: var(--nd-ink-faint); }
+    .cv-copy {
+      margin-top: 32px;
+      max-width: 470px;
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--nd-ink-muted);
+    }
+    .cv-copy em { font-style: normal; color: var(--nd-ink); }
+
+    /* Signature band: one week, tonal ladder, idle hatched */
+    .cv-week {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: repeat(14, 1fr);
+      height: 168px;
+      margin-left: -72px;
+      margin-right: -72px;
+      border-top: 1px solid var(--nd-hairline);
+    }
+    .cv-week i {
+      position: relative;
+      border-left: 1px solid var(--nd-hairline);
+    }
+    .cv-week i:first-child { border-left: 0; }
+    .cv-week .t1 { background: var(--nd-shell); }
+    .cv-week .t2 { background: var(--nd-panel); }
+    .cv-week .t3 { background: var(--nd-raised); }
+    .cv-week .t4 { background: var(--nd-raised-hover); }
+    .cv-week .off { background-color: var(--nd-panel); background-image: var(--nd-hatch); }
+    .cv-week .sig::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: var(--h);
+      background: var(--c);
+    }
+    .cv-foot {
+      position: absolute;
+      left: 72px; right: 72px; top: 60px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      font: 400 13px/1 var(--nd-font-mono);
+      color: var(--nd-ink-faint);
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <div class="cv-shell">
+      <h1 class="cv-title">Night<br /><span>desk.</span></h1>
+      <p class="cv-copy">A graphite operations desk. Grey panels, ledger figures, and color held back until <em>the numbers earn it</em>.</p>
+      <div class="cv-week" aria-hidden="true">
+        <i class="t1"></i><i class="t2"></i><i class="t3"></i><i class="t4"></i><i class="t3"></i>
+        <i class="off"></i><i class="off"></i>
+        <i class="t2"></i><i class="t3 sig" style="--c:var(--nd-gain);--h:118px"></i><i class="t4 sig" style="--c:var(--nd-progress);--h:74px"></i><i class="t3 sig" style="--c:var(--nd-caution);--h:40px"></i><i class="t2 sig" style="--c:var(--nd-loss);--h:22px"></i>
+        <i class="off"></i><i class="off"></i>
+      </div>
+      <div class="cv-foot"><span>Dashboard system · Dark</span></div>
+    </div>
+  </div>
+</body>
+</html>

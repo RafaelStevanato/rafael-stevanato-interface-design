@@ -1,0 +1,118 @@
+{
+  "name": "Nightdesk",
+  "description": "A graphite operations dashboard system for teams that live inside their numbers: dense tables, gantt timelines, and KPI panels on a near-black shell, with color held back for gain, loss, and progress.",
+  "theme": "dark",
+  "stylingMode": "css",
+  "concept": "Nightdesk is the late-shift control desk. A matte charcoal canvas holds a single inset near-black shell, and inside it every panel is a flat graphite slab separated by 1px hairlines instead of shadows. Color is rationed like a signal: green only for gain, red only for loss, cobalt only for progress. Idle time is drawn, not labeled, as a fine diagonal hatch over weekends and empty chart areas, so the eye reads workload density at a glance. Figures are set in a monospace with tabular rhythm so columns of money and dates align like a ledger.",
+  "palette": [
+    {
+      "name": "Canvas",
+      "value": "#303030",
+      "role": "Page background around the app shell"
+    },
+    {
+      "name": "Shell",
+      "value": "#121212",
+      "role": "App frame, sidebar, and main work area"
+    },
+    {
+      "name": "Panel",
+      "value": "#1B1B1B",
+      "role": "Panels, tables, and chart cards"
+    },
+    {
+      "name": "Raised",
+      "value": "#262626",
+      "role": "Buttons, gantt bars, active nav rows, tooltips"
+    },
+    {
+      "name": "Hairline",
+      "value": "#2C2C2C",
+      "role": "Borders, dividers, table rules, hatch strokes"
+    },
+    {
+      "name": "Ink",
+      "value": "#EDEDED",
+      "role": "Primary text and figures; muted text uses #8A8A8A"
+    },
+    {
+      "name": "Gain",
+      "value": "#3CC45A",
+      "role": "Positive deltas, cashflow lines, healthy status bars"
+    },
+    {
+      "name": "Loss",
+      "value": "#E5484D",
+      "role": "Negative deltas, burn lines, at-risk status bars"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Fira Sans",
+      "provider": "Google Fonts",
+      "usage": "Interface text, navigation, headings, table content",
+      "cssImport": "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap"
+    },
+    {
+      "name": "Sometype Mono",
+      "provider": "Google Fonts",
+      "usage": "KPI figures, currency, dates, counts, and percentages",
+      "cssImport": "https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500;600&display=swap"
+    }
+  ],
+  "iconPack": {
+    "name": "Lucide",
+    "url": "https://lucide.dev/",
+    "license": "ISC",
+    "usage": "1.5px outline icons at 16px for navigation, panel headers, table metadata, and toolbar actions.",
+    "examples": [
+      {
+        "name": "Search",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-search\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"m21 21-4.34-4.34\" /> <circle cx=\"11\" cy=\"11\" r=\"8\" /> </svg>"
+      },
+      {
+        "name": "Sun",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-sun\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <circle cx=\"12\" cy=\"12\" r=\"4\" /> <path d=\"M12 2v2\" /> <path d=\"M12 20v2\" /> <path d=\"m4.93 4.93 1.41 1.41\" /> <path d=\"m17.66 17.66 1.41 1.41\" /> <path d=\"M2 12h2\" /> <path d=\"M20 12h2\" /> <path d=\"m6.34 17.66-1.41 1.41\" /> <path d=\"m19.07 4.93-1.41 1.41\" /> </svg>"
+      },
+      {
+        "name": "Moon",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-moon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401\" /> </svg>"
+      },
+      {
+        "name": "Layers",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-layers\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z\" /> <path d=\"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12\" /> <path d=\"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17\" /> </svg>"
+      },
+      {
+        "name": "Zap",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-zap\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z\" /> </svg>"
+      },
+      {
+        "name": "Check",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-check\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M20 6 9 17l-5-5\" /> </svg>"
+      },
+      {
+        "name": "Bell",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-bell\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M10.268 21a2 2 0 0 0 3.464 0\" /> <path d=\"M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326\" /> </svg>"
+      },
+      {
+        "name": "Settings",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-settings\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915\" /> <circle cx=\"12\" cy=\"12\" r=\"3\" /> </svg>"
+      },
+      {
+        "name": "User",
+        "svg": "<!-- @license lucide-static v1.14.0 - ISC --> <svg class=\"lucide lucide-user\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" > <path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\" /> <circle cx=\"12\" cy=\"7\" r=\"4\" /> </svg>"
+      }
+    ]
+  },
+  "logo": {
+    "name": "Nightdesk cross",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 334.73 334.73\" fill=\"currentColor\"><path d=\"M310.24,106.13c-29.06,5.04-58.94,8.19-89.52,9.72,1.39-30.45,4.01-60.91,7.88-91.36,0-13.52-10.96-24.49-24.49-24.49h-73.49c-13.52,0-24.49,10.96-24.49,24.49,5.1,29.4,8.26,59.64,9.77,90.59-29.95-1.79-60.44-4.82-91.41-8.95-13.53,0-24.49,10.96-24.49,24.49v73.49c0,13.52,10.96,24.49,24.49,24.49,30.15-3.83,60.31-6.44,90.46-7.84-1.8,29.34-4.78,59.18-8.82,89.48,0,13.52,10.96,24.49,24.49,24.49h73.49c13.52,0,24.49-10.96,24.49-24.49-3.79-29.81-6.39-59.63-7.8-89.44,29.81,1.42,59.63,4.02,89.44,7.8,13.53,0,24.49-10.96,24.49-24.49v-73.49c0-13.52-10.96-24.49-24.49-24.49Z\"/></svg>"
+  },
+  "tags": [
+    "Dashboard",
+    "Dark",
+    "Data-dense",
+    "Operations",
+    "CSS"
+  ]
+}
